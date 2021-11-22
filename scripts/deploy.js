@@ -5,7 +5,7 @@
 // Runtime Environment's members available in the global scope.
 const hre = require("hardhat");
 
-const main = async() => {
+const main = async () => {
   // Hardhat always runs the compile task when running scripts with its command
   // line interface.
   //
@@ -31,11 +31,11 @@ const main = async() => {
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
-const runMain = async() => {
-  try{
+const runMain = async () => {
+  try {
     await main();
     process.exit(0);
-  }catch(error){
+  } catch (error) {
     console.log(error);
     process.exit(1);
   }
